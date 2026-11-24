@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Bu Chandra | Happy Teacher's Day</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #fffaf0, #f4e5ce);
+    color: #59452e;
+    overflow-x: hidden;
+}
+
+.hero {
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero .flower {
+    font-size: 55px;
+    animation: floating 3s infinite ease-in-out;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 8vw, 55px);
+    color: #b18a4b;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background: #c9a66b;
+    margin: 20px auto;
+}
+
+.photo-section {
+    max-width: 500px;
+    margin: 0 auto 35px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.photo-frame {
+    padding: 12px;
+    background: white;
+    box-shadow: 0 10px 35px #bca77f;
+    border: 1px solid #d9bd8b;
+    animation: appear 1.5s ease;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+.caption {
+    margin-top: 15px;
+    font-style: italic;
+    color: #9c7947;
+}
+
+.content {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 35px 25px;
+    background: rgba(255,255,255,0.75);
+    border: 1px solid #e5d2af;
+    text-align: center;
+    line-height: 2;
+    box-shadow: 0 5px 25px rgba(150,110,60,0.1);
+}
+
+.content h2 {
+    font-size: 28px;
+    color: #b18a4b;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: linear-gradient(45deg, #c6a05f, #a77c3e);
+    color: white;
+    border: none;
+    padding: 16px 28px;
+    font-size: 16px;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px #d5bc91;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 25px #c5a46d;
+}
+
+#surprise {
+    display: none;
+    margin-top: 30px;
+    animation: appear 1s ease;
+}
+
+#surprise h2 {
+    font-size: 27px;
+    color: #b18a4b;
+}
+
+#surprise p {
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #a17d48;
+    line-height: 2;
+    font-style: italic;
+}
+
+.falling {
+    position: fixed;
+    top: -40px;
+    z-index: 10;
+    pointer-events: none;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes floating {
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="flower">🌷</div>
+
+    <p>A SPECIAL APPRECIATION</p>
+
+    <h1>Happy Teacher's Day</h1>
+
+    <div class="line"></div>
+
+    <p>For The Wonderful Teacher, Bu Chandra</p>
+</section>
+
+<section class="photo-section">
+    <div class="photo-frame">
+
+        <!-- FOTO FORMAT JPEG -->
+        <img src="bu-chandra.jpeg"
+             alt="Foto Bu Chandra">
+
+        <div class="caption">
+            A beautiful memory to remember ❤️
+        </div>
+
+    </div>
+</section>
+
+<section class="content">
+
+    <h2>Dear Bu Chandra</h2>
+
+    <p>
+        Terima kasih, Bu, karena telah menjadi guru
+        yang memberikan ilmu, arahan, dan bimbingan
+        kepada kami.
+    </p>
+
+    <p>
+        Mungkin kami sebagai murid tidak selalu
+        sempurna. Terkadang ada kesalahan,
+        perkataan, atau tingkah laku yang mungkin
+        membuat Ibu merasa kecewa.
+    </p>
+
+    <p>
+        Namun, kami ingin Ibu tahu bahwa setiap
+        ilmu dan nasihat yang Ibu berikan sangat
+        berarti bagi kami.
+    </p>
+
+    <p>
+        Terima kasih sudah sabar menghadapi
+        berbagai macam karakter murid.
+        Semoga Ibu selalu diberikan kesehatan,
+        kebahagiaan, dan kesuksesan.
+    </p>
+
+    <p>
+        Guru bukan hanya seseorang yang mengajarkan
+        pelajaran, tetapi juga seseorang yang
+        membantu kami menemukan jalan menuju masa depan.
+    </p>
+
+    <button onclick="showSurprise()">
+        Buka Pesan Spesial 💌
+    </button>
+
+    <div id="surprise">
+        <h2>SELAMAT HARI GURU!</h2>
+        <h2>BU CHANDRA ❤️</h2>
+        <p>💐🌷✨</p>
+        <p>
+            Terima kasih telah menjadi bagian
+            dari perjalanan kami.
+        </p>
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <p>With respect and gratitude,</p>
+
+    <h3>Dari murid Ibu,</h3>
+
+    <h2>12f1 ❤️</h2>
+
+    <p>Terima kasih atas segala ilmu yang diberikan.</p>
+
+</footer>
+
+<script>
+function showSurprise() {
+
+    document.getElementById("surprise").style.display = "block";
+
+    document.querySelector("button").innerText =
+        "Terima kasih, Bu Chandra ❤️";
+
+    // Animasi bunga dan bintang
+    for (let i = 0; i < 45; i++) {
+
+        setTimeout(() => {
+
+            let item = document.createElement("div");
+
+            item.className = "falling";
+
+            item.innerHTML = ["🌸", "🌷", "✨", "💛", "💐"][
+                Math.floor(Math.random() * 5)
+            ];
+
+            item.style.left = Math.random() * 100 + "vw";
+
+            item.style.fontSize =
+                (15 + Math.random() * 20) + "px";
+
+            item.style.animationDuration =
+                (3 + Math.random() * 4) + "s";
+
+            document.body.appendChild(item);
+
+            setTimeout(() => item.remove(), 7000);
+
+        }, i * 100);
+
+    }
+}
+</script>
+
+</body>
+</html>
