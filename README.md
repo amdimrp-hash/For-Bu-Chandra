@@ -259,7 +259,7 @@ button:hover {
 
 <footer class="footer">
 
-    <p>With respect and gratitude,</p>
+    <p>With respect ,</p>
 
     <h3>Dari murid Ibu,</h3>
 
